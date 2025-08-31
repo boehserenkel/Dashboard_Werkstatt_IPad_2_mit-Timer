@@ -5,7 +5,7 @@
   <title>Dashboard für iPad 2</title>
 
   <!-- Optimierung für iPad 2 und Web-App Modus -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="Dashboard" />
@@ -85,6 +85,32 @@
 
     .timer-buttons button:hover {
       background-color: #e64a19;
+    }
+
+    /* Media Queries für iPad 2 */
+    @media only screen and (max-width: 1024px) {
+      canvas {
+        width: 90vw;
+        height: 90vw;
+      }
+
+      #digitalClock {
+        font-size: 2em;
+      }
+
+      .section {
+        max-width: 90vw;
+        padding: 15px;
+      }
+
+      .calendar, .infos {
+        font-size: 1.2em;
+      }
+
+      .timer-buttons button {
+        font-size: 1.3em;
+        padding: 12px;
+      }
     }
   </style>
 </head>
